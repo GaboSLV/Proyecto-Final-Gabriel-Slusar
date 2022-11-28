@@ -1,0 +1,89 @@
+@import 'general.scss';
+
+.cart-wrapper {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .cart-items {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    } 
+    .cart-item {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "image info quantity total remove";
+        .quantity-title {
+            grid-area: quantity;
+        }
+        .total-title {
+            grid-area: total;
+        }
+        .cart-item__image {
+            width: 12rem;
+        }
+        .cart-item__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-area: "info";
+        }
+        .remove-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: remove;
+            background: $contrast-color;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: pointer;
+        }
+    }
+    .no-cart-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .cart-interact {
+        margin-top: 5rem;
+    }
+    .cart-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .cart-info__dform {
+        width: 15rem;
+        color: white;
+        padding: 1rem;
+        background: 
+        linear-gradient(($background-color, $background-color)) padding-box,
+        linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%) border-box;
+        border-radius: 15px;
+        border: 1px solid transparent;
+        cursor: pointer;
+
+    }
+    .cart-button {
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: whtie;
+        border: none;
+        border-radius: 2.5rem;
+        cursor: pointer;
+    }
+    #removeFromClass {
+        position: relative;
+        top: 0;
+        cursor: pointer;
+        
+    }
+}

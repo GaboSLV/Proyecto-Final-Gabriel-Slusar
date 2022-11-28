@@ -1,0 +1,45 @@
+@import 'general.scss';
+
+.item-count { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.item-count-box {
+    display: flex;
+    justify-content: space-around;
+    width: 12rem;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    background: 
+    linear-gradient(($background-color, $background-color)) padding-box,
+    linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%) border-box;
+    border-radius: 15px;
+    border: 1px solid transparent;
+}
+
+.count-button {
+    cursor: pointer;
+}
+
+.count-button:hover {
+    transition: color 0.5s;
+    color: $contrast-color;
+}
+
+.item-count-button-add {
+    width: 20rem;
+    font-family: 'Montserrat';
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border: none;
+    color: white;
+    background-color: transparent;    cursor: pointer;
+}
+
+.item-count__available {
+    font-size: 1.5rem;
+}

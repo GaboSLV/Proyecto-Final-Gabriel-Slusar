@@ -1,0 +1,63 @@
+@import 'general.scss';
+
+.item-detail {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+
+
+    .item__title {
+        background: $contrast-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3rem;
+    }
+    .item__description {
+        margin: 2rem;
+    }
+    .item__category {
+        margin: 0;
+    }
+    .item__price {
+        margin-bottom: 10rem;
+    }
+    .item__interact {
+        margin-top: 5rem;
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .item__button {
+        background: $contrast-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+        &#button-remove {
+            margin-left: 3rem;
+            background: $contrast-color;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .item__cartlink {
+        padding: 1rem;
+        background: 
+        linear-gradient(($background-color, $background-color)) padding-box,
+        linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%) border-box;
+        border-radius: 15px;
+        border: 1px solid transparent;
+        text-decoration: none;
+        color: white;
+    } 
+}
+
+@media (min-width: 992px) {
+    .item-detail {
+        flex-direction: row;
+    }
+}

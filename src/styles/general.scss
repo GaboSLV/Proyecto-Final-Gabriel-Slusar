@@ -1,0 +1,42 @@
+// General 
+
+$background-color: #0d1017;
+$contrast-color: linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+
+
+@font-face {
+    font-family: "TTCommonsRegular";
+    src: url(../fonts/TTCommons/Fontspring-DEMO-tt_commons_pro_regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "TTCommonsBold";
+    src: url(../fonts/TTCommons/Fontspring-DEMO-tt_commons_pro_bold.otf);
+    font-weight: bold;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+    overflow-x:hidden !important;
+}
+  
+body {
+    padding: 0; margin: 0;
+    min-height: 100vh; min-width: 100vw;
+    font-size: 1.6rem;
+    background-color: $background-color;
+    color: white;
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin-top: 10rem;
+}
+
+.app-container {
+    margin-bottom: 10rem;
+}
