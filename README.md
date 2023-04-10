@@ -1,8 +1,7 @@
-# Vibes Store (Coderhouse Project)
+# Vibes Store
 
 # About
-Vibes Stores es una tienda de hardware, creada como proyecto de Coder House.
-
+Vibes Stores es una tienda de hardware
 
 # Contact
 Email: gabosv23@gmail.com
